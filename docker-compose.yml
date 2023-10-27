@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - /Users/radhakantaghosh/Office/Install/redis/dаta:/root/redis
+      - /Users/radhakantaghosh/Office/Install/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    environment:
+      - REDIS_PASSWORD=admin@123
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=16
