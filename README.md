@@ -2,8 +2,8 @@
 
 ### **Steps to start this application**
 
-1. Execute docker composer to start redish locally ($> <span style="color:#D2DE32">docker compose up</span>
-2. Create a local folder and keep **<span style="color:#D2DE32">redis.conf</span>** and point in docker-compose volume section
+1. Execute docker composer to start redish locally ``` $> docker compose up```</span>
+2. Create a local folder and keep ```redis.conf``` and point in docker-compose volume section
 3. Start your spring application 
 
 ### **Test confirmation**
