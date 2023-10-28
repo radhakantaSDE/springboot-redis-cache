@@ -19,8 +19,8 @@
 }'
 ```
 
-2. We created user with name **Raj** with id=100(cache key) but, GET api return a constant value of user **Ritu**(id=100) 
-But, Get call should return cashed user(Raj) with id "100" instead of constant user(Ritu)
+2. We created user with ```{name=Raj,id=100}``` but, GET api return a constant value of user ```{name=Ritu,id=100}``` 
+But, Get call should return cashed user ```{name=Raj,id=100}``` instead of constant user ```Ritu```
 ```ruby 
     curl --location 'http://localhost:8080/user/100'
     
